@@ -28,6 +28,6 @@ jobs:
         node-version: 12 
 
     - name: Install Surge
-    - run: npm install -g surge
+      run: npm install -g surge
     - name: deploying using surge
-    - run: surge ./ overwrought-leaf.surge.sh --token ${{secrets.surge_token}}
+      run: surge ./ overwrought-leaf.surge.sh --token ${{secrets.surge_token}}
